@@ -34,7 +34,18 @@ plainchar = gets.chomp.downcase
 cipher[cipherchar] = plainchar
  
 end
- 
+while true
+c = gets.chomp
+if c = "replace"
+ cipher_helper
+end
+elsif c = "scan"
+ scanner
+end
+elsif c = "end"
+ break
+end
+
 ## ALL
 # TODO This is a bit hard to read. Could you make it so that the
 # ciphertext is lowercase and plaintext is uppercase?
