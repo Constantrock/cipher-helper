@@ -7,7 +7,7 @@ cipher = {} # Initialize the dictionary (or hash)
 ## We'll start with a quote by Cicero, but eventually we want to
 ## generate the ciphertext ourselves
 def scanner
-  letter_values = 
+  letter_values = ciphertext.scan(/\w/).inject(Hash.new(0)){|h, c| h[c] += 1; h}
   puts letter_values
 ciphertext = "IEUHKZM KN ZQU IUNZ EULTRRUWVYZKTW TP NJUULQ GQUZQUE KW Y NUWYZTE TE YW TEYZTE"
  
